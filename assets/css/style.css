@@ -183,12 +183,14 @@ main{}
         color: #ffffff;
         text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
         padding: 10px 0;
+        max-width: 60%;
     }
     div.secao-destaque-buttons {
         display: flex;
     }
         div.secao-destaque-buttons button.assistir,
         div.secao-destaque-buttons button.mais-informacoes {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 12px;
             border: none;
             border-radius: 5px;
@@ -265,12 +267,74 @@ main{}
     div.container {
         padding: 0 60px;
     }
+    /* HEADER */
+    a.logo figure img {
+        width: 92px;
+    }
+    .mobile-element {
+        display: none;
+    }
+    header nav ul {
+        position: static;
+        display: flex;
+        padding: 0;
+        background-color: transparent;
+    }
+        header nav ul li {
+            margin-right: 20px;
+        }
+    div.menu-usuario span.usuario img {
+        width: 32px;
+    }
+    div.menu-usuario span.pesquisar img {
+        display: inline-block;
+        width: 18px;
+        margin-bottom: 8px;
+        margin-right: 10px;
+    }
+
+    /* MAIN */
+    div.secao-destaque-buttons button.assistir,
+    div.secao-destaque-buttons button.mais-informacoes  {
+            font-size: 22px;
+    }
+    article.secao-destaque-conteudo figure img {
+        width: 650px;
+    }
+    article.secao-destaque-conteudo p {
+        padding: 30px 0;
+        font-size: 26px;
+        max-width: 50%;
+    }
+    section.secao-catalogo {
+        margin-top: 30px;
+    }
+    h2.secao-catalogo-titulo {
+        font-size: 26px;
+    }
+    section.secao-catalogo div.container ul {
+        flex-wrap: nowrap;
+    }
+        section.secao-catalogo div.container ul li{
+            width: 287px;
+            margin-right: 3px;
+        }
+ 
 }
 
 @media screen and (min-width: 1735px){
-    div.container {
+    div.full-container {
         max-width: 1735px;
+        margin: 0 auto;
+    }
+    div.container {
         padding: 0;
+    }
+    div.filme-destaque {
+        padding: 0 0 100px;
+    }
+    article.secao-destaque-conteudo p {
+        max-width: 40%;
     }
 }
 /* MEDIA QUERIES */
