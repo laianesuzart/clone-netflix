@@ -38,7 +38,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
     text-decoration: none;
 }
 
-div.flex {
+.flex {
     display: flex;
 }
 .hidden {
@@ -62,7 +62,7 @@ body {
         background-image: url(../img/movies/ted.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: right;
         padding-bottom: 80px;
     }
         div.container {
@@ -138,7 +138,38 @@ header {
   
 
 /* FOOTER */
-footer{}
+footer {
+    border-top: 1px solid rgb(128 128 128 / 26%);
+    color: gray;
+    font-size: 11px;
+    margin-top: 80px;
+    padding: 30px 0 15px;
+    line-height: 2;
+}
+    footer div.flex {
+        flex-direction: column;
+    }
+        footer ul li a {
+            color: gray;
+            font-size: 13px;
+        }
+        footer nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+            footer nav ul li{
+                width: 50%;
+            }
+
+        ul.redes-sociais {
+            display: flex;
+            margin: 10px 0;
+        
+        }
+            ul.redes-sociais img {
+                width: 20px;
+                margin-right: 18px;
+            }
 /* FOOTER */
 
   
@@ -187,10 +218,32 @@ main{}
         div.secao-destaque-buttons button.mais-informacoes:hover {
             background-color: rgba(109,109,110,0.4);
         }
-  
-        section#secao-continuar-assistindo {
-           margin-top: -50px;
+
+    section.secao-catalogo {
+        margin-top: 10px;
+    }
+        section.secao-catalogo div.container ul {
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
+            section.secao-catalogo div.container ul li{
+                width: 49%;
+            }
+                section.secao-catalogo div.container ul li figure img{
+                    border-radius: 8px;
+                    width: 100%;
+                }
+
+            h2.secao-catalogo-titulo {
+                color: #e5e5e5;
+                font-size: 17px;
+            }
+
+                section#secao-continuar-assistindo {
+                margin-top: -50px;
+                background: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+                }
+            
 /* INICIAL */
   
 
