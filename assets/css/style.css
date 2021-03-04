@@ -247,8 +247,8 @@ footer {
   
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px){
-    .darkMenu {
-        background-color: black;
+    .stickyMenu {
+        background-color: var(--bg-color);
         transition: all 500ms;
     }
     div.filme-destaque {
