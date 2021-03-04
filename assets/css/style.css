@@ -247,7 +247,10 @@ footer {
   
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px){
-
+    .darkMenu {
+        background-color: black;
+        transition: all 500ms;
+    }
     div.filme-destaque {
         height: 660px;
     }
@@ -260,6 +263,7 @@ footer {
         top: 0;
         width: 100%;
         max-width: 1735px;
+        transition: all 500ms;
     }
         a.logo figure img {
             width: 92px;
